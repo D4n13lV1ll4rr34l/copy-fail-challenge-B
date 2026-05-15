@@ -1,0 +1,14 @@
+=== HITO 2: EXPLOIT EXITOSO ===
+Fecha: Fri May 15 03:56:49 UTC 2026
+Hostname: ubuntu
+Identidad PRE-exploit:
+uid=1000(ubuntu)
+
+Identidad POST-exploit:
+uid=0(root) gid=1000(ubuntu) groups=1000(ubuntu),4(adm),24(cdrom),27(sudo),30(dip),46(plugdev),100(users),114(lpadmin),124(sambashare)
+
+Kernel:
+6.17.0-14-generic
+
+SHA256 exploit:
+d401e7d1c00605749d6c617ace73ab20a762b72e41c2e1590331596e38219a61  copy_fail_exp.py
