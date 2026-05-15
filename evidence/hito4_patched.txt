@@ -1,0 +1,25 @@
+=== HITO 4: PARCHE APLICADO ===
+
+Fecha: Fri May 15 10:48:33 PM UTC 2026
+
+Archivo parcheado:
+crypto/algif_aead.c
+
+Funcion modificada:
+_aead_recvmsg()
+
+Cambio aplicado:
+aead_request_set_crypt(..., rsgl_src, ...)
+→
+aead_request_set_crypt(..., areq->tsgl, ...)
+
+Resultado:
+- Kernel recompilado exitosamente
+- bzImage generado correctamente
+- Kernel parcheado arrancado correctamente
+- Vulnerabilidad mitigada mediante separación src/dst
+- Patch generado manualmente
+
+Patch:
+patches/fix_algif_aead.patch
+
